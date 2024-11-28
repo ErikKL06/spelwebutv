@@ -58,6 +58,21 @@ function update(){
        yPos += 5;
     }
   }
+
+/** Renderar canvasen */
+function render(){
+    let canvas = document.getElementById('gameCanvas');
+    let ctx = canvas.getContext( '2d' );
+   
+    // Ser till att radera med vit bakgrund som det sedan skall ritas på
+    ctx.save();
+    ctx.fillStyle = "white";
+    ctx.fillRect(0,0,canvas.width, canvas.height);
+   
+    ctx.drawImage(birdImg, xPos, yPos);
+   
+    ctx.restore();
+  }
   
   
   
