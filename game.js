@@ -13,7 +13,6 @@ function init(){
     gameLoop();
 }
 
-window.addEventListener("load",init);
 
 //Lagrar tangent-händelser
 let keysDown = {};
@@ -73,6 +72,8 @@ function render(){
    
     ctx.restore();
   }
+
+  window.addEventListener("load",init);
   
   
   
